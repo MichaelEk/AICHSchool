@@ -1,0 +1,5 @@
+Map	Maps/map1
+Symmetric	true
+Player0	Stupid
+Player1	Stupid
+TimeOut	10
