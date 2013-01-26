@@ -123,7 +123,7 @@ namespace AntsGame
 
         private List<Cell> GetVisibleCells(int armyId)
         {
-            return Armies[armyId].Ants.SelectMany(ant => GetNearCells(ant.Coords, ViewRadius2)).ToList();
+            return Armies[armyId].Ants.SelectMany(ant => GetNearCells(ant.Coords, ViewRadius2)).Distinct().ToList();
         }
 
         public void War()
